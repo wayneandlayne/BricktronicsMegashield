@@ -37,6 +37,7 @@ const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_1 = {
     11, // pwmPin
     3,  // encoderPin1
     12, // encoderPin2
+    false, // reversedMotorDrive
     &::pinMode,
     &::digitalWrite,
     &::digitalRead,
@@ -48,6 +49,7 @@ const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_2 = {
     9,  // pwmPin
     2,  // encoderPin1
     10, // encoderPin2
+    false, // reversedMotorDrive
     &::pinMode,
     &::digitalWrite,
     &::digitalRead,
@@ -58,6 +60,7 @@ const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_3 = {
     8,  // pwmPin
     18, // encoderPin1
     7,  // encoderPin2
+    false, // reversedMotorDrive
     &::pinMode,
     &::digitalWrite,
     &::digitalRead,
@@ -69,6 +72,7 @@ const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_4 = {
     6,  // pwmPin
     19, // encoderPin1
     14, // encoderPin2
+    false, // reversedMotorDrive
     &::pinMode,
     &::digitalWrite,
     &::digitalRead,
@@ -80,6 +84,7 @@ const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_5 = {
     5,  // pwmPin
     20, // encoderPin1
     15, // encoderPin2
+    false, // reversedMotorDrive
     &::pinMode,
     &::digitalWrite,
     &::digitalRead,
@@ -91,6 +96,7 @@ const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_6 = {
     4,  // pwmPin
     21, // encoderPin1
     16, // encoderPin2
+    false, // reversedMotorDrive
     &::pinMode,
     &::digitalWrite,
     &::digitalRead,
