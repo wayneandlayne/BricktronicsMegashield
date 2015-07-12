@@ -79,7 +79,7 @@ const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_4 = {
 };
 
 const BricktronicsMotorSettings BricktronicsMegashield::MOTOR_5 = {
-    32, // enPin
+    63, // enPin
     62, // dirPin
     5,  // pwmPin
     20, // encoderPin1
