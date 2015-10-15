@@ -9,6 +9,14 @@ To download. click the "Download ZIP" button on the right side of this page. Ren
 
 Place the BricktronicsMegashield library folder into your `<arduinosketchfolder>/libraries/` folder. You may need to create the libraries subfolder if this is your first installed library. Restart the Arduino IDE.
 
+**Supported motor and sensor libraries you may be interested in:**
+* [BricktronicsMotor](https://github.com/wayneandlayne/BricktronicsMotor) – Support for NXT 2.0 and EV3 servomotors
+* [BricktronicsLight](https://github.com/wayneandlayne/BricktronicsLight) – Support for monochrome light sensor
+* [BricktronicsColor](https://github.com/wayneandlayne/BricktronicsColor) – Support for color sensors
+* [BricktronicsSound](https://github.com/wayneandlayne/BricktronicsSound) – Support for sound sensors
+* [BricktronicsButton](https://github.com/wayneandlayne/BricktronicsButton) – Support for pushbutton sensors
+* [BricktronicsUltrasonic](https://github.com/wayneandlayne/BricktronicsUltrasonic) – Support for the NXT 2.0 ultrasonic sensor
+
 **If you want to automatically verify all configurations of the library example sketches, you need to download the W&L VerifySketchConfig library so that the symbolic link works:**
 * [VerifySketchConfig](https://github.com/wayneandlayne/VerifySketchConfig/)
 
