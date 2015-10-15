@@ -3,7 +3,7 @@ BricktronicsMegashield
 
 **BricktronicsMegashield v1.2 - A software library for Arduino.**
 
-This meta-library provides easy interfacing to the [Bricktronics Megashield](https://store.wayneandlayne.com/products/bricktronics-megashield-kit.html). This library does not contain any functional code, rather it provides static mappings between motor and sensor ports on the Megashield, and the pin numbers needed by the motor and sensor libraries.
+This meta-library provides easy interfacing to the [Bricktronics Megashield](https://store.wayneandlayne.com/products/bricktronics-megashield-kit.html). This library does not contain any functional code, rather it provides static mappings between motor and sensor ports on the Megashield, and the pin numbers needed by the motor and sensor libraries. It packages the pin settings into two structs defined in [BricktronicsSettings.h](utility/BricktronicsSettings.h), which are defined as static const objects in the BricktronicsMegashield class. Use these objects in your motor and sensor constructors.
 
 More details at http://www.wayneandlayne.com/bricktronics/
 
