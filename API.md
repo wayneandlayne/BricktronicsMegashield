@@ -4,7 +4,12 @@ This meta-library provides easy interfacing to the [Bricktronics Megashield](htt
 
 # Supported motor and sensor libraries
 
-
+* [BricktronicsMotor](https://github.com/wayneandlayne/BricktronicsMotor) – Support for NXT 2.0 and EV3 servomotors
+* [BricktronicsLight](https://github.com/wayneandlayne/BricktronicsLight) – Support for monochrome light sensor
+* [BricktronicsColor](https://github.com/wayneandlayne/BricktronicsColor) – Support for color sensors
+* [BricktronicsSound](https://github.com/wayneandlayne/BricktronicsSound) – Support for sound sensors
+* [BricktronicsButton](https://github.com/wayneandlayne/BricktronicsButton) – Support for pushbutton sensors
+* [BricktronicsUltrasonic](https://github.com/wayneandlayne/BricktronicsUltrasonic) – Support for the NXT 2.0 ultrasonic sensor
 
 # Quick Example
 
