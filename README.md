@@ -8,9 +8,8 @@ This meta-library provides easy interfacing to the [Bricktronics Megashield](htt
 More details at http://www.wayneandlayne.com/bricktronics/
 
 **To Download**
-Click the "Clone or download" button on the upper-right side of this page below the pink bar, then select "Download ZIP". Rename the uncompressed folder BricktronicsMegashield. Check that the BricktronicsMegashield folder contains BricktronicsMegashield.cpp and BricktronicsMegashield.h
-
-Place the BricktronicsMegashield library folder into your `<arduinosketchfolder>/libraries/` folder. You may need to create the libraries subfolder if this is your first installed library. Restart the Arduino IDE.
+* Click the "Clone or download" button on the upper-right side of this page below the pink bar, then select "Download ZIP". Rename the uncompressed folder BricktronicsMegashield. Check that the BricktronicsMegashield folder contains BricktronicsMegashield.cpp and BricktronicsMegashield.h
+* Place the BricktronicsMegashield library folder into your `<arduinosketchfolder>/libraries/` folder. You may need to create the libraries subfolder if this is your first installed library. Restart the Arduino IDE.
 
 **API Highlights**
 * `BricktronicsShield::MOTOR_1` - Use this static const struct in your motor constructors. `MOTOR_1` through `MOTOR_6` are defined.
