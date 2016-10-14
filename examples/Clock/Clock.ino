@@ -2,35 +2,18 @@
 // Chapter 4: Clock
 // Website: http://www.wayneandlayne.com/bricktronics/
 //
-// Written in 2015 by Matthew Beckler and Adam Wolf for Wayne and Layne, LLC
+// Written in 2016 by Matthew Beckler and Adam Wolf for Wayne and Layne, LLC
 // To the extent possible under law, the author(s) have dedicated all
 //   copyright and related and neighboring rights to this software to the
 //   public domain worldwide. This software is distributed without any warranty.
 // You should have received a copy of the CC0 Public Domain Dedication along
 //   with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
 
-// Include the Bricktronics motor library and helper libraries
-// Helper libraries can be downloaded from:
-//      https://www.pjrc.com/teensy/td_libs_Encoder.html
-//      https://github.com/br3ttb/Arduino-PID-Library/
-//          Be sure to rename unzipped folder PID_v1
-#include <Encoder.h>
-#include <PID_v1.h>
-#include <BricktronicsMotor.h>
-// Include the Bricktronics button library
+// Include the Bricktronics libraries and helper libraries
+#include <BricktronicsShield.h>
 #include <BricktronicsButton.h>
-
-// Include the Bricktronics Megashield library and helper libraries
-// Requires the Adafruit MCP23017 library:
-//      https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library
-#include <Wire.h>
-#include <Adafruit_MCP23017.h>
-#include <BricktronicsMegashield.h>
-
-// Also requires the Time library from:
-//      https://github.com/PaulStoffregen/Time
-//          Be sure to rename unzipped folder Time
-#include <Time.h>
+#include <BricktronicsMotor.h>
+#include "Time.h"
 
 
 // The minimum number of milliseconds between calls to loop()
@@ -39,16 +22,17 @@
 time_t t;
 
 // Create the motor and button objects
-BricktronicsMotor h(BricktronicsMegashield::MOTOR_1);
-BricktronicsMotor m(BricktronicsMegashield::MOTOR_2);
-BricktronicsButton hour_button(BricktronicsMegashield::SENSOR_1);
-BricktronicsButton minute_button(BricktronicsMegashield::SENSOR_2);
+BricktronicsMotor h(BricktronicsShield::MOTOR_1);
+BricktronicsMotor m(BricktronicsShield::MOTOR_2);
+BricktronicsButton hour_button(BricktronicsShield::SENSOR_1);
+BricktronicsButton minute_button(BricktronicsShield::SENSOR_2);
 
 void setup()
 {
     Serial.begin(115200); // We use the USB serial port for debugging our Arduino code. It allows us to send information from the Arduino to the computer.
     Serial.println("starting!");
 
+    BricktronicsShield::begin();
     m.begin();
     h.begin();
     hour_button.begin();
